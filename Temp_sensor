@@ -21,9 +21,9 @@ void loop()
   delay(60000); // 2 minute delay (120000) 1 minute delay (60000)
   
  reading = analogRead(tempPin);
- float millivolts = (reading/1024.0) * 3300;
- tempC = millivolts/10;
- tempC = (5.0 * reading * 100.0)/1024;
+ // float millivolts = (reading/1024.0) * 3300;
+ // tempC = millivolts/10;
+ // tempC = (5.0 * reading * 100.0)/1024;
  tempC = reading/9.31;
  
   // Check if any reads failed and exit early (to try again).
